@@ -4,7 +4,7 @@ import { useEffect } from "react"
 export const RockList = ({ rocks, fetchRocks }) => {
     useEffect(() => {
         fetchRocks()
-    }, [fetchRocks])
+    }, [])
 
     const displayRocks = () => {
         if (rocks && rocks.length) {
